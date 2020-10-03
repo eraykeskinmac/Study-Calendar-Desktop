@@ -68,7 +68,7 @@ export default function HomePage(): JSX.Element {
     ],
     [
       {
-        StudyName: 'Tarih',
+        StudyName: 'Tarih123',
         Class: 'C1',
         Place: 'Zoom',
       },
