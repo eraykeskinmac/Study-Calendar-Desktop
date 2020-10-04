@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import { Box, Text, Grid, Flex, Drawer } from 'bumbag';
+import DayPage from './DayPage';
 
 export default function HomePage(): JSX.Element {
   const drawer = Drawer.useState();
@@ -10,32 +11,7 @@ export default function HomePage(): JSX.Element {
   const data = [
     [
       {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
-      },
-      {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
-      },
-      {
-        StudyName: '-',
-      },
-      {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
-      },
-      {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
-      },
-      {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
+        Day: 'Pazartesi',
       },
       {
         StudyName: 'Tarih',
@@ -51,12 +27,7 @@ export default function HomePage(): JSX.Element {
         StudyName: '-',
       },
       {
-        StudyName: 'Tarih1',
-        Class: 'C1',
-        Place: 'Zoom',
-      },
-      {
-        StudyName: 'Tarih2',
+        StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
       },
@@ -64,18 +35,218 @@ export default function HomePage(): JSX.Element {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
       },
     ],
     [
       {
-        StudyName: 'Tarih123',
+        Day: 'Salı',
+      },
+      {
+        StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+    ],
+    [
+      {
+        Day: 'Çarşamba',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+    ],
+    [
+      {
+        Day: 'Perşembe',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+    ],
+    [
+      {
+        Day: 'Cuma',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+        Time: '9.30-9.40',
+        Link: 'asdasdasdasdas',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+      },
+      {
+        StudyName: '-',
       },
     ],
   ];
 
   const getTimeBox = (time: string) => {
+    if (time === '-') {
+      return <Box />;
+    }
     return (
       <Flex
         fontWeight="bold"
@@ -93,10 +264,11 @@ export default function HomePage(): JSX.Element {
   return (
     <Box padding="lg">
       <Grid
-        gridTemplateColumns="1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"
+        gridTemplateColumns="30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"
         gridTemplateRows="40px 1fr 1fr 1fr  1fr  1fr "
         gap="8px"
       >
+        {getTimeBox('-')}
         {getTimeBox('9:10 - 9.40')}
         {getTimeBox('9:11 - 9.40')}
         {getTimeBox('9:13 - 9.40')}
@@ -106,35 +278,50 @@ export default function HomePage(): JSX.Element {
         {getTimeBox('9:17 - 9.40')}
         {getTimeBox('9:18 - 9.40')}
         {getTimeBox('9:10 - 9.40')}
-        {getTimeBox('9:10 - 9.40')}
 
-        {data[0].map((a, index) => {
-          return (
-            <Flex
-              border="1px solid #ccc"
-              borderRadius="4px"
-              padding="xs"
-              flexDirection="column"
-              // eslint-disable-next-line react/no-array-index-key
-              key={a.StudyName + index}
-              cursor="pointer"
-              _hover={{
-                border: '1px solid blue',
-              }}
-              onClick={() => {
-                drawer.show();
-                setSelectedBox(a.StudyName);
-              }}
-            >
-              <Text>{a.StudyName}</Text>
-              <Text>{a.Class}</Text>
-              <Text>{a.Place}</Text>
-            </Flex>
-          );
-        })}
+        {data.map((item, i) =>
+          item.map((a, index) => {
+            if (a.Day) {
+              return (
+                <Flex
+                  transform="rotate(180deg)"
+                  writingMode="vertical-lr"
+                  justifyContent="center"
+                  backgroundColor="primary"
+                  color="white"
+                >
+                  {a.Day}
+                </Flex>
+              );
+            }
+
+            return (
+              <Flex
+                border="1px solid #ccc"
+                borderRadius="4px"
+                padding="xs"
+                flexDirection="column"
+                // eslint-disable-next-line react/no-array-index-key
+                key={`Study-${i}${index}`}
+                cursor="pointer"
+                _hover={{
+                  border: '1px solid blue',
+                }}
+                onClick={() => {
+                  drawer.show();
+                  setSelectedBox(a);
+                }}
+              >
+                <Text>{a.StudyName}</Text>
+                <Text>{a.Class}</Text>
+                <Text>{a.Place}</Text>
+              </Flex>
+            );
+          })
+        )}
       </Grid>
       <Drawer width="50%" placement="right" {...drawer}>
-        Selected Study :{selectedBox}
+        <DayPage data={selectedBox} />
       </Drawer>
     </Box>
   );
