@@ -17,11 +17,15 @@ export default function HomePage(): JSX.Element {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9:10-9.40',
+        ZoomId: '123456',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9:10-9.40',
+        ZoomId: '3024923310',
       },
       {
         StudyName: '-',
@@ -202,43 +206,63 @@ export default function HomePage(): JSX.Element {
         Class: 'C1',
         Place: 'Zoom',
         Time: '9.30-9.40',
-        Link: 'asdasdasdasdas',
+        ZoomId: '1234567',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
-      },
-      {
-        StudyName: '-',
-      },
-      {
-        StudyName: 'Tarih',
-        Class: 'C1',
-        Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
       {
         StudyName: 'Tarih',
         Class: 'C1',
         Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
       {
-        StudyName: '-',
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
+      },
+      {
+        StudyName: 'Tarih',
+        Class: 'C1',
+        Place: 'Zoom',
+        Time: '9.30-9.40',
+        ZoomId: '1234567',
       },
     ],
   ];
@@ -270,14 +294,14 @@ export default function HomePage(): JSX.Element {
       >
         {getTimeBox('-')}
         {getTimeBox('9:10 - 9.40')}
-        {getTimeBox('9:11 - 9.40')}
-        {getTimeBox('9:13 - 9.40')}
-        {getTimeBox('9:14 - 9.40')}
-        {getTimeBox('9:15 - 9.40')}
-        {getTimeBox('9:16 - 9.40')}
-        {getTimeBox('9:17 - 9.40')}
-        {getTimeBox('9:18 - 9.40')}
-        {getTimeBox('9:10 - 9.40')}
+        {getTimeBox('9:50 - 10.20')}
+        {getTimeBox('10:30 - 11.00')}
+        {getTimeBox('11:10 - 11.40')}
+        {getTimeBox('11:50 - 12.20')}
+        {getTimeBox('13:10 - 13.40')}
+        {getTimeBox('13:50 - 14.20')}
+        {getTimeBox('14:30 - 15.00')}
+        {getTimeBox('15:10 - 15.40')}
 
         {data.map((item, i) =>
           item.map((a, index) => {
